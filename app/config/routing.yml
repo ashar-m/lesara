@@ -1,0 +1,22 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+product_api:
+    resource: "@ProductApiBundle/Controller/"
+    type:     annotation
+    prefix:   /api
+
+product_api_show:
+    path:     /showProducts
+    defaults: { _controller: ProductApiBundle:Default:show }
+product_api_get:
+    path:     /api/getProducts
+    defaults: { _controller: ProductApiBundle:Default:get }
+
+product_api_save:
+    path:     /api/saveProducts
+    defaults: { _controller: ProductApiBundle:Default:save }
+
+product_api_fixer:
+    path:     /getFixerConvert
+    defaults: { _controller: ProductApiBundle:Default:convert }

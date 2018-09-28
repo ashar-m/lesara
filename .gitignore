@@ -1,0 +1,9 @@
+.idea/
+app/config/parameters.yml
+/var/*
+!/var/.gitkeep
+/.web-server-pid
+.phpunit
+/phpunit.xml
+/.env
+results/
